@@ -63,8 +63,7 @@
 		ponteiro[i] = &Super[i];
 		setlocale(LC_ALL,"Portuguese");
 		char escolha[5];
-		Super[i].Poder.Dano =5;
-		Super[i].HP = 110;
+	
 		do{
 		printf("Herói %i\n", i+1 );
 		printf("Qual tipo de poder você quer para seu herói?\nGelo\nFogo\nAgua\nTerra\nAr\nDigite seu poder: ");
@@ -72,10 +71,12 @@
 		qualpoder();
 
 		printf("\nInsira um nome para o poder do seu Herói: ");
-		scanf("%s",&ponteiro[i]->Poder.NomePoder );
-		printf("%s\n", Super[i].Poder.NomePoder );
-
-		printf("Deseja inserir de novo? (s/n)");
+		scanf("%s",&ponteiro[i]->Poder.NomePoder);
+		
+		printf("Insira um valor de dano: ");
+		scanf("%i",&Super[i].Poder.Dano);
+	
+		printf("\nDeseja inserir de novo? (s/n)");
 		scanf("%s",&escolha);
 		
 		system("cls");
@@ -125,9 +126,12 @@
 		printf("Herói %i", i+1 );
 		printf("\nInsira um Nome para seu Herói: ");
 		scanf("%s",&ponteiro[i]->NomeHeroi );
+		printf("Insira um valor de HP: ");
+		scanf("%i",&ponteiro[i]->HP );
 
-		printf("\n%s está correto ?(s/n)\n", Super[i].NomeHeroi   );
+		printf(" %s está correto ?(s/n)",Super[i].NomeHeroi);
 		scanf("%s",&escolha);
+		
 		system("cls");
 	}while(strcasecmp(escolha,"n")==0);
 	}
