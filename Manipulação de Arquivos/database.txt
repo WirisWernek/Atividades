@@ -2,3 +2,6 @@ sofá  500,00 4591 d
 Cama 700,00 6557 d 
 Fogão 350,00 1678 d 
 Desktop 3000,50 4632 d 
+cadeira 500,00 5844 d 
+cama 400,50 8477 d 
+celular 999,50 4629 d 
