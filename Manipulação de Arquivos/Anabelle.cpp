@@ -54,7 +54,7 @@ void Start()
 	//system("pause");
 	//system("clear");
 }
-//Fun��o de busca
+//Função de busca
 void Search()
 {
 	system("clear");
@@ -95,7 +95,6 @@ void Search()
 	{
 		printf("Não Encontrado");
 	}
-
 	CloseFile(arquivo);
 }
 
@@ -104,9 +103,87 @@ void Search()
 void Update()
 {
 	system("clear");
-	printf("\n\tEsta funcionalidade não esta disponível no momento!\n\tVisite https://github.com/WirisWernek/Atividades para futuras atualiza��es!\n");
-	printf("\n\n\tDesculpe, mas ainda não entendi como fazer isso!");
+	// printf("\n\tEsta funcionalidade não esta disponível no momento!\n\tVisite https://github.com/WirisWernek/Atividades para futuras atualizações!\n");
+	// printf("\n\n\tDesculpe, mas ainda não entendi como fazer isso!");
+	FILE *arquivo;
+	arquivo = OpenFile('l', "database.txt");
+	int cont = 0;
+	struct RegisterFurniture Receive[1000];
+	int i=0;
+	int codatu;
+	int revisa=0;
+	int encontrado;
+	int cpI;
+	int cprevisa;
+	int decide=0;
+
+	setlocale(LC_ALL, "Portuguese");
+
+	//printf("\t\tJá disponível: \n");
+	while (!feof(arquivo))
+	{
+
+		fscanf(arquivo, "%s %f %i %c ", &Receive[i].name, &Receive[i].value, &Receive[i].cod, &Receive[i].status);
+		i++;
+	}
+	cpI=i-1;
+	CloseFile(arquivo);
+
+	printf("Qual o código do produto a ser atualizado? ");
+	setbuf(stdin, NULL);
+	scanf("%i", &codatu);
+	while(revisa<=i){
+		if(codatu==Receive[revisa].cod){
+			printf("Código válido");
+			encontrado=1;
+			int cprevisa = revisa+1;
+
+
+				if (encontrado==1)
+				{
+					printf("\nO que você deseja Alterar?\n");
+					printf("Para alterar nome digite 1\n");
+					printf("Para alterar valor digite 2\n");
+					printf("Para alterar status digite 3\n");
+					setbuf(stdin, NULL);
+					scanf("%i", &decide);
+
+
+					switch(decide){
+						case 1:
+							printf("Insira o Novo nome: ");
+							setbuf(stdin, NULL);
+							scanf("%s", &Receive[cprevisa].name);
+							break;
+						case 2:
+							printf("Insira o Novo Valor: ");
+							setbuf(stdin, NULL);
+							scanf("%f", &Receive[cprevisa].value);
+							break;
+						case 3:
+							printf("Insira o Novo Status: ");
+							setbuf(stdin, NULL);
+							scanf("%c", &Receive[cprevisa].status);
+							break;
+					}
+				}
+
+		}
+
+		else{
+			encontrado=0;
+		}
+		revisa++;
+	}
+
+	arquivo = OpenFile('g', "database.txt");
+	for(i=0; i<cpI+i;i++){
+		fprintf(arquivo, "%s %.2f %i %c \n", Receive[i].name, Receive[i].value, Receive[i].cod, Receive[i].status);
+	}
+	CloseFile(arquivo);
+
 }
+
 
 //Função de remoção
 //Não Funciona
@@ -184,9 +261,9 @@ int main()
 	system("clear");
 
 	printf("Já disponível:\n");
-	List();
-	system("pause");
+	//List();
 
+	printf("1");
 	do
 	{
 		system("clear");
