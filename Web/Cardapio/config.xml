@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+id="br.com.wiris.appcardapio" version="1.0.0">
+
+<name>Cardápio</name>
+<description>Menu do nosso restaurante.</description>
+<author  href="http://wiris.com.br" email="rafaeljwerneck43@gmail.com">Wiris Rafael J Wernek</author>
+<icon src="imagens/icon.png"/>
+<gap:splash src="imagens/splash.png"/>
+
+<preference name="orientation" value="portrait"/>
+<preference name="fullscreen" value="true"/>
+<gap:plataform name="android"/>

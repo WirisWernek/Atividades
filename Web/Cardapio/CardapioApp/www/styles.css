@@ -1,0 +1,73 @@
+body{
+    background-color: #3D1A11;
+    font-family: sans-serif;
+    margin: 0%;
+    text-align: center;
+}
+.menu{
+    /* Width é largura e Heigth é altura */
+    width: 100%;
+}
+input[type=radio]{
+    display: none;
+}
+label{
+    background: center top no-repeat #563429;
+    background-size: 4em;
+    color: #FFF;
+    display: block;
+    font-size: 75%;
+    /* alteração no paddind na parte inferior era 4 e agora é 0 */
+    padding: 4em 0 1em;
+    text-transform: uppercase;
+}
+label[for=opcao-bolos]{
+    background-image: url(imagens/icone-bolos.svg);
+
+}
+label[for=opcao-bebidas]{
+    background-image: url(imagens/icone-bebidas.svg);
+    
+}
+:checked+label{
+    background-color: #E4876D;
+}
+/* Posicionamenro */
+label{
+    width: 50%;
+    bottom: 0;
+    z-index: 1;
+    position: fixed;
+}
+label[for=opcao-bolos]{
+    left: 0;
+
+}
+label[for=opcao-bebidas]{
+    right: 0;
+    
+}
+
+/*Animação*/
+
+html,
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+.container-menu{
+    width: 200%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    -webkit-transition: transform 300ms ease;
+    transition: -webkit-transform  300ms ease;;
+}
+    .container-menu .menu{
+    width: 50%;
+    float: left;
+}
+#opcao-bebidas:checked ~ .container-menu{
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
