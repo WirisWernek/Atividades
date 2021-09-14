@@ -4,7 +4,7 @@ Projeto criado para trabalhar conceito de Estruturas de Dados(listas e filas) e 
 
 ### Preview
 
-![consultorio](https://gifs.com/gif/consultrios-EqxGZm)
+![myImage](https://giphy.com/embed/8hP2GqGwBJyz46hjNh)
 
 Se você precisa gerênciar seus consultórios e seus pacientes essa é uma otima opção!
 
