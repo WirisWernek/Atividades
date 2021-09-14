@@ -36,13 +36,13 @@ void enfileirar(FILA *fila)
     else
     {
         printf("Insira o nome do Paciente:\n");
-        scanf("%s", &ptr->nome);
+        scanf("%s", ptr->nome);
 
         printf("Insira o CPF do Paciente:\n");
-        scanf("%s", &ptr->cpf);
+        scanf("%s", ptr->cpf);
 
         printf("Insira o Número do Cartão DuniMed do Paciente:\n");
-        scanf("%s", &ptr->cartao);
+        scanf("%s", ptr->cartao);
         ptr->proximo = NULL;
         if (fila->inicio == NULL)
         {

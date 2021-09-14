@@ -4,7 +4,7 @@
 #include <locale.h>
 void tabuleiro(char casa2[3][3])
 {
-	system("cls");
+	system("clear");
 	printf("\t %c | %c | %C \n", casa2[0][0], casa2[0][1], casa2[0][2]);
 	printf("\t-----------\n");
 	printf("\t %c | %c | %C \n", casa2[1][0], casa2[1][1], casa2[1][2]);
@@ -44,14 +44,11 @@ int main()
 			tabuleiro(casa);
 			if (vez % 2 == 0)
 			{
-
-				system("color 10");
 				printf("Jogador X\n");
 			}
 
 			else
 			{
-				system("color 69");
 				printf("Jogador O\n");
 			}
 
@@ -166,26 +163,22 @@ int main()
 		tabuleiro(casa);
 		if (cont_jogada == 10)
 		{
-			system("color 24");
 			printf("Game Over\nJogo Empatado\n");
 		}
 
 		else if (cont_jogada == 11)
 		{
-			system("color 24");
-			printf("PARAB�NS!!!!!");
-			printf("\nVit�ria do Jogador X\n");
+			printf("PARABÉNS!!!!!");
+			printf("\nVitória do Jogador X\n");
 		}
 
 		else if (cont_jogada == 12)
 		{
-			system("color 24");
-			printf("PARAB�NS!!!!!");
-			printf("\nVit�ria do Jogador O\n");
+			printf("PARABÉNS!!!!!");
+			printf("\nVitória do Jogador O\n");
 		}
 
-		system("pause");
-		system("color 0f");
+		setbuf(stdin, NULL);
 		printf("\nDeseja jogar novamente(s/n)? ");
 		scanf("%s", &resposta);
 	} while (resposta == 's');
