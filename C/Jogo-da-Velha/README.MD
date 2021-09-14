@@ -4,7 +4,7 @@ Projeto criado para trabalhar conceitos de Matrizes e Vetores.
 
 ### Preview
 
-<iframe width="1080" height="720" src="https://www.youtube-nocookie.com/embed/LKIINagU7uw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![gifjogodavelha](https://media.giphy.com/media/uApRequDkoLAm37oHk/giphy.gif?cid=790b76119f2c6b1380503b98c41641027d8fcaebffcb5f64&rid=giphy.gif&ct=g)
 
 Quem não ama um jogo da velha não é? Aqui você e seu amigo vão poder se divertir quando quiserem
 
