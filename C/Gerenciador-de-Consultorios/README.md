@@ -4,7 +4,7 @@ Projeto criado para trabalhar conceito de Estruturas de Dados(listas e filas) e 
 
 ### Preview
 
-<iframe width="1080" height="720" src="https://www.youtube-nocookie.com/embed/LKIINagU7uw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ReYdWdqYq38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Se você precisa gerênciar seus consultórios e seus pacientes essa é uma otima opção!
 
