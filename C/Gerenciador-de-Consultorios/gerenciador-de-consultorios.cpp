@@ -357,8 +357,8 @@ int main()
     Valores *temp;
 
     Lista L1;
-    L1->Primeiro = V1;
-    L1->Ultimo = V1;
+    L1.Primeiro=NULL;
+    L1.Ultimo=NULL;
 
     do
     {
