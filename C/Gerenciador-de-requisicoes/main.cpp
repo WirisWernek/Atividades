@@ -468,6 +468,9 @@ int main()
     Lista L1;
     L1.Quantidade = 0;
     L1.Contador = 0;
+    L1.Primeiro=NULL;
+    L1.Ultimo=NULL;
+
     system("clear");
     while (true)
     {
