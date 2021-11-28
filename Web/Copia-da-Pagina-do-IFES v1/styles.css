@@ -1,0 +1,142 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  max-width: 200px;
+}
+html, body{
+    margin:0px !important;
+    padding: 0px !important;
+}
+.head{
+    display: flex;
+    text-align: center;
+    width: auto;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    padding: 50px;
+    margin: 0px;
+    color: #FFFFFF;
+    background-color: #227722;
+  }
+.subhead{
+    width: 100%;
+  }
+a{
+    color: #A22;
+    text-decoration-line: none;
+    margin: 5px 0 9px 0;
+    padding: 15px;
+}
+.menu{
+    text-align: center;
+    word-spacing: 15px;
+    padding: 10px;
+    margin: 5px 0 0 0;
+    color: #A22;
+    font-size: 30px;
+    background-color: #EEEEEE;
+}
+.menu a:hover{
+    text-decoration: none;
+    background-color: #A22;
+    color: #FFF;
+}
+footer{
+    text-align: center;
+}
+.cursos{
+    padding: 20px;
+    width: fit-content;
+    background-color: #EEEEEE;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+}
+.header{
+    align-content: center;
+    flex-direction: row;  
+    width: 1000px;
+    padding: 2em 4em;
+    margin: 5px 5px 0 0 ;
+    background-color: #EEEEEE;
+}
+.intoheader{
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+    width: 40em;
+    margin: 0 auto;
+}
+.content1{
+    display: grid;
+    padding: 50px;
+    width: 65em;
+    margin: 5px 0 0 0;
+    background-color: #EEEEEE;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.separa{
+    background-color: #DDCCDD;
+    padding: 20px 40px 30px 40px;
+    margin: 3px ;
+}
+.buttom{
+    width: 110px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #EEEEEE;
+    background-color: #AA2222;
+}
+
+.buttom:hover{
+    text-decoration: none;
+    background-color: #FFF;
+    color: #A22;
+}
+@media (max-width: 1024px) {
+    .head{
+        display: flex;
+        text-align: center;
+        width: 1040px;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        padding: 50px;
+        margin: 0px;
+        color: #FFFFFF;
+        background-color: #227722;
+      }
+      .menu{
+        text-align: center;
+        word-spacing: 15px;
+        padding: 10px;
+        width: 1120px;
+        margin: 5px 0 0 0;
+        color: #A22;
+        font-size: 30px;
+        background-color: #EEEEEE;
+    }
+    .intoheader{
+        flex-direction: column;
+        height: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+    footer{
+        width: 1120px;
+        text-align: center;
+    }
+    
+}
