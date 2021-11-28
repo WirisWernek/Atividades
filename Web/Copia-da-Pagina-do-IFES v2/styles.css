@@ -64,7 +64,7 @@ main {
   flex-direction: row;
   margin: 0 0 0 0;
 }
-.header {
+.content1 {
   align-content: center;
   flex-direction: row;
   width: 1000px;
@@ -79,7 +79,7 @@ main {
   width: 40em;
   margin: 0 auto;
 }
-.content1 {
+.content2 {
   display: grid;
   padding: 50px;
   width: 65em;
