@@ -17,6 +17,9 @@ body {
   margin: 0px !important;
   padding: 0px !important;
 }
+.bold {
+  font-weight: bold;
+}
 .head {
   display: flex;
   text-align: center;
