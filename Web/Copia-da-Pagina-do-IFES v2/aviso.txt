@@ -1,0 +1,1 @@
+O projeto foi desenvolvido em um monitor 1920x1080 é possível que em outras resoluções haja alguma perda na proporção,por isso o preview.

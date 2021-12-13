@@ -1,0 +1,5 @@
+form input[type=radio]:hover,
+form input[type=reset]:hover,
+form input[type=submit]:hover {
+  cursor: pointer;
+}

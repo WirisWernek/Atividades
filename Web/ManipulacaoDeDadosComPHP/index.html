@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>LastGame</title>
+</head>
+
+<body>
+  <form id="formulario" action="cadastrarpersonagem.php" method="post">
+    <fieldset>
+      <legend>Cadastrar Personagem</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required /><br />
+
+      <label for="classe">Classe:</label><br />
+      <input type="radio" name="categoria" id="categoria_guerreiro" value="Guerreiro" required />
+      <label for="categoria_guerreiro">Guerreiro</label><br />
+
+      <input type="radio" name="categoria" id="categoria_mago" value="Mago" />
+      <label for="categoria_mago">Mago</label><br />
+
+      <input type="radio" name="categoria" id="categoria_paladino" value="Paladino" />
+      <label for="categoria_paladino">Paladino</label><br />
+
+      <input type="radio" name="categoria" id="categoria_druida" value="Druida" />
+      <label for="categoria_druida">Druida</label><br />
+
+      <input type="radio" name="categoria" id="categoria_cacador" value="Caçador" />
+      <label for="categoria_cacador">Caçador</label><br />
+
+      <input type="radio" name="categoria" id="categoria_bruxo" value="Bruxo" />
+      <label for="categoria_bruxo">Bruxo</label><br />
+
+      <input type="radio" name="categoria" id="categoria_elfo" value="Elfo" />
+      <label for="categoria_elfo">Elfo</label><br />
+
+      <input type="radio" name="categoria" id="categoria_goblin" value="Goblin" />
+      <label for="categoria_goblin">Goblin</label><br />
+
+      <input type="radio" name="categoria" id="categoria_assassino" value="Assassino" />
+      <label for="categoria_assassino">Assassino</label><br />
+
+      <label for="hp">HP:</label>
+      <input type="number" name="hp" id="hp" required /><br />
+
+      <label for="mana">Mana:</label>
+      <input type="number" name="mana" id="mana" required /><br />
+
+      <label for="resistencia">Resistência:</label>
+      <input type="number" name="resistencia" id="resistencia" required /><br />
+
+      <label for="forca">Força:</label>
+      <input type="number" name="forca" id="forca" required /><br />
+
+      <input type="submit" value="Cadastrar" />
+      <input type="reset" value="Limpar" />
+    </fieldset>
+  </form>
+
+
+  <button><a href="./personagens.php">Vizualizar</a></button>
+</body>
+
+</html>
