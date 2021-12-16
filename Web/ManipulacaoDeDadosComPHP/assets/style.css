@@ -3,3 +3,26 @@ form input[type=reset]:hover,
 form input[type=submit]:hover {
   cursor: pointer;
 }
+
+button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(1, 11, 20);
+}
+
+#botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}

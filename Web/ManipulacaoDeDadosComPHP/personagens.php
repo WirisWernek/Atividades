@@ -1,6 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Personagens Cadastrados</title>
+</head>
+<body>
+<button class="btn btn-primary"><a href="./index.html">Inicio</a></button><br/>
+
 <?php
 session_start();
-echo '<a href="./index.html">Inicio</a><br>';
+echo '<h1 align="center">Personagens Cadastrados</h1>';
+$imprimir="";
 $descricao = [
     'Guerreiro'=>'O guerreiro é um personagem humano destinado à proteger seu rei não se importando como fará isso, ele tem grandes habilidades com armas de curto alcance, e tem vantagem contra Bruxos e desvantagem contra Caçadores', 
     
@@ -25,45 +41,40 @@ for ($i=0; $i < 10; $i++) {
     if ($_SESSION['array'][$i] == NULL){
         break;
     }
-    echo "Nome: " . $_SESSION['array'][$i]['nome'] . "<br>";
-    echo "Categoria: " . $_SESSION['array'][$i]['categoria'] . "<br>";
-    echo "HP: " . $_SESSION['array'][$i]['hp'] . "<br>";
-    echo "Mana: " . $_SESSION['array'][$i]['mana'] . "<br>";
-    echo "Força: " . $_SESSION['array'][$i]['forca'] . "<br>";
-    echo "Resistencia: " . $_SESSION['array'][$i]['resistencia'] . "<br>";
 
-    switch ($_SESSION['array'][$i]['categoria']) {
-        case 'Guerreiro':
-            echo "Descrição: " . $descricao['Guerreiro'] . "<br>";
-            break;
-        case 'Mago':
-            echo "Descrição: " . $descricao['Mago'] . "<br>";
-            break;
-        case 'Paladino':
-            echo "Descrição: " . $descricao['Paladino'] . "<br>";
-            break;
-        case 'Druida':
-            echo "Descrição: " . $descricao['Druida'] . "<br>";
-            break;
-        case 'Caçador':
-            echo "Descrição: " . $descricao['Caçador'] . "<br>";
-            break;
-        case 'Bruxo':
-            echo "Descrição: " . $descricao['Bruxo'] . "<br>";
-            break;
-        case 'Elfo':
-            echo "Descrição: " . $descricao['Elfo'] . "<br>";
-            break;
-        case 'Goblin':
-            echo "Descrição: " . $descricao['Goblin'] . "<br>";
-            break;
-        case 'Assassino':
-            echo "Descrição: " . $descricao['Assassino'] . "<br>";
-            break;                                                                                          
-        default:
-            # code...
-            break;
-    }
+    $imprimir = '
+    <div style="display: flex;align-items: center;justify-content: center;">
+        <form id="formulario">
+            <div class=" class="container row ">
+                <div class="col align-items-center ">
+                    <label for="nome">Nome:</label><input class="input-group-text " type="text" name="nome" id="nome" disabled value="' . $_SESSION['array'][$i]['nome'] . '" /><br />
+
+                    <label for="categoria">Categoria:</label>
+                    <input class="input-group-text" type="text" name="categoria" id="categoria" disabled value="' . $_SESSION['array'][$i]['categoria'] . '" /><br />
+
+                    <label for="hp">HP:</label>
+                    <input class="input-group-text" type="number" name="hp" id="hp" disabled value="' . $_SESSION['array'][$i]['hp'] . '" /><br />
+
+                    <label for="mana">Mana:</label>
+                    <input class="input-group-text" type="number" name="mana" id="mana" disabled value="' . $_SESSION['array'][$i]['mana'] . '" /><br />
+
+                    <label for="resistencia">Resistência:</label>
+                    <input class="input-group-text" type="number" name="resistencia" id="resistencia" disabled value="' . $_SESSION['array'][$i]['resistencia'] . '" /><br />
+
+                    <label for="forca">Força:</label>
+                    <input class="input-group-text" type="number" name="forca" id="forca"disabled value="' . $_SESSION['array'][$i]['forca'] . '" /><br />
+                    
+                    <label for="floatingTextarea2">Descrição</label>
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px" disabled>' . $descricao[$_SESSION['array'][$i]['categoria']] . '</textarea>
+            </div>
+        </div>
+    </form>
+  </div>';
+
+  echo $imprimir;
+
     echo "<hr>";
 }
 ?>
+</body>
+</html>
